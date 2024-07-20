@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { AboutBlock } from "./components/AboutBlock";
-import { HeaderBlock } from "./components/HeaderBlock";
-import { SocialsBlock } from "./components/SocialsBlock";
-import { LocationBlock } from "./components/LocationBlock";
-import { EmailListBlock } from "./components/EmailListBlock";
+import { AboutBlock } from "../components/AboutBlock";
+import { HeaderBlock } from "../components/HeaderBlock";
+import { SocialsBlock } from "../components/SocialsBlock";
+import { LocationBlock } from "../components/LocationBlock";
+import { EmailListBlock } from "../components/EmailListBlock";
 
 export const Homepage = () => {
   return (
