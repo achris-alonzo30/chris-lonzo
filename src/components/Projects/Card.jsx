@@ -5,7 +5,21 @@ import { Corners } from "./Corners";
 import { FiGithub, FiGlobe, FiCalendar } from "react-icons/fi";
 import { ProjectShowcaseDrawer } from "./ProjectShowcaseDrawer";
 
-export const Card = ({ src, date, href, title, description }) => {
+export const Card = ({ 
+  src,
+  date,
+  project,
+  videoUrl,
+  problems,
+  features,
+  githubUrl,
+  websiteUrl,
+  backendStacks,
+  frontendStacks,
+  shortDescription,
+  longDescription,
+  clientLibraries,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -19,8 +33,8 @@ export const Card = ({ src, date, href, title, description }) => {
           <span>{date}</span>
         </aside>
         <h2 className="relative z-10 font-medium text-2xl leading-tight transition-transform duration-500 group-hover:-translate-y-3">
-          <span className="font-bold text-3xl underline">{title}</span>{" "}
-          {description}
+          <span className="font-bold text-3xl underline">{project}</span>{" "}
+          {shortDescription}
         </h2>
         <aside className="absolute flex items-center right-3 top-4 z-10 text-2xl text-zinc-400 transition-colors group-hover:text-zinc-50">
           <Link to="/" className="pr-4">
@@ -50,7 +64,7 @@ export const Card = ({ src, date, href, title, description }) => {
             />
           </aside>
           <header className="flex justify-between items-center">
-            <h2 className="text-4xl font-bold text-zinc-200">{title}</h2>
+            <h2 className="text-4xl font-bold text-zinc-200">{project}</h2>
             <nav className="flex items-center">
               <Link to="/" className="pr-4">
                 <FiGithub className="text-base hover:text-emerald-300 text-zinc-200 transition-all" />
@@ -61,7 +75,7 @@ export const Card = ({ src, date, href, title, description }) => {
             </nav>
           </header>
           <p className="text-zinc-400 tracking-tight">
-            {description}
+            {longDescription}
           </p>
 
           <footer className="flex items-center gap-4">
