@@ -2,6 +2,7 @@ import { Card } from "../components/Projects/Card";
 import { TitleCard } from "../components/Projects/TitleCard";
 
 export const GridCardProjects = () => {
+  const selectedProject = 0;
   return (
     <section className="bg-zinc-800 p-4 text-zinc-50 md:p-12">
       <article className="mx-auto grid max-w-5xl grid-cols-1 divide-y divide-zinc-700 border border-zinc-700 md:grid-cols-3 md:divide-x md:divide-y-0">
