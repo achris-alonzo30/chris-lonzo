@@ -16,9 +16,9 @@ export const HeaderBlock = () => {
       </h1>
       <a
         href="#"
-        className="group flex items-center gap-1 text-red-300 hover:underline"
+        className="group flex items-center gap-1 text-white hover:underline"
       >
-        Contact Me <FiArrowRight className="group-hover:translate-x-2 transition-all duration-200" />
+        About me <FiArrowRight className="group-hover:translate-x-2 transition-all duration-200" />
       </a>
     </Block>
   );

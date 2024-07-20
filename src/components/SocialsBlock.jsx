@@ -14,7 +14,7 @@ export const SocialsBlock = () => {
         className="col-span-6 bg-blue-500 md:col-span-3"
       >
         <a
-          href="#"
+          href="https://www.linkedin.com/in/lonzochris"
           rel="noopener noreferrer"
           target="_blank"
           className="grid h-full place-content-center text-3xl text-white"
@@ -30,7 +30,7 @@ export const SocialsBlock = () => {
         className="col-span-6 bg-neutral-800 md:col-span-3"
       >
         <a
-          href="#"
+          href="https://www.github.com/achris-alonzo30"
           rel="noopener noreferrer"
           target="_blank"
           className="grid h-full place-content-center text-3xl text-white"
@@ -47,7 +47,7 @@ export const SocialsBlock = () => {
       >
         <a
           href="/projects"
-          className="grid h-full place-content-center text-3xl text-black"
+          className="grid h-full place-content-center text-3xl text-white"
         >
           <FiGrid />
         </a>
@@ -57,7 +57,7 @@ export const SocialsBlock = () => {
           rotate: "2.5deg",
           scale: 1.1,
         }}
-        className="col-span-6 bg-slate-500 md:col-span-3"
+        className="col-span-6 bg-rose-500 md:col-span-3"
       >
         <a
           href="/awards"
