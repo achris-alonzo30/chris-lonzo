@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
-export const Projects = ({
+export const Project = ({
   data,
   role,
   link,
