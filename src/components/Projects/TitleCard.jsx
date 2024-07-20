@@ -5,7 +5,7 @@ export const TitleCard = () => {
         <Link 
             to="/projects"
             target="_blank"
-            className="group relative flex h-56 flex-col justify-between bg-zinc-950 p-6 md:h-80 md:p-9"
+            className="group relative flex h-full w-full flex-col justify-between bg-zinc-950 p-6 md:h-80 md:p-9"
         >
             <h2 className="text-4xl uppercase leading-tight">
                 <span className="text-zinc-400 transition-colors duration-500 group-hover:text-emerald-300">

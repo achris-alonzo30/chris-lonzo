@@ -3,7 +3,8 @@ import "./App.css";
 import { 
   Route,
   Routes,
-  BrowserRouter,   
+  BrowserRouter,
+  Link,   
 } from "react-router-dom";
 
 import logo from "/logo.svg";
@@ -19,7 +20,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="min-h-screen flex flex-col items-center justify-center bg-zinc-900 px-4 py-12 text-zinc-50">
-        <img src={logo} alt="Christopher Alonzo Initialials Logo" className="h-14 w-14 text-center mb-4" />
+        <Link to="/"><img src={logo} alt="Christopher Alonzo Initialials Logo" className="h-14 w-14 text-center mb-4" /> </Link>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/about-me" element={<AboutMe />} />

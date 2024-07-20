@@ -12,7 +12,7 @@ export const Card = ({ src, date, href, title, description }) => {
     <>
       <aside
         onClick={() => setIsOpen(true)}
-        className="group relative cursor-pointer flex h-56 flex-col justify-end overflow-hidden p-6 transtion-colors hover:bg-neutral-950 md:h-80 md:p-9"
+        className="group border relative cursor-pointer flex h-56 flex-col justify-end overflow-hidden p-6 transtion-colors hover:bg-neutral-950 md:h-80 md:p-9"
       >
         <aside className="absolute left-3 top-5 z-10 flex items-center gap-1.5 text-xs uppercase text-zinc-400 transition-colors duration-500 group-hover:text-zinc-50">
           <FiCalendar className="text-base" />
