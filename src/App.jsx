@@ -7,13 +7,13 @@ import {
 } from "react-router-dom";
 
 import logo from "/logo.svg";
-import { Footer } from "./components/Footer";
+import { Footer } from "./components/Homepage/Footer";
 
 import { Awards } from "./pages/Awards";
 import { AboutMe } from "./pages/AboutMe";
 import { Homepage } from "./pages/Homepage";
-import { Projects } from "./pages/Projects";
 import { NotFound } from "./pages/NotFound";
+import { GridCardProjects } from "./pages/Projects";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/about-me" element={<AboutMe />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects" element={<GridCardProjects />} />
           <Route path="/awards" element={<Awards />} />
           <Route path="*" element={<NotFound /> } />
         </Routes>

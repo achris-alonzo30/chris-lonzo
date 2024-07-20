@@ -1,43 +1,49 @@
-import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { Card } from "../components/Projects/Card";
+import { TitleCard } from "../components/Projects/TitleCard";
 
-import { Project } from "../components/Project";
-
-import jsonData from "../lib/projects.json";
-
-export const Projects = () => {
-    const {projects} = jsonData;
-    const [open, setOpen] = useState(projects[0].id);
-    const video = projects.find(p => p.id === open)?.video;
-    console.log(video)
-    return (
-        <section className="px-8 py-12 bg-zinc-900">
-            <article className="w-full max-w-5xl mx-auto grid gap-8 grid-cols-1 lg:grid-cols-[1fr_500px]">
-                <aside>
-                    <h3 className="text-4xl font-bold mb-8 text-zinc-50">
-                        Projects
-                    </h3>
-                    <div className="flex flex-col gap-4">
-                        {projects.map(p => (
-                            <Project {...p} key={p.id} open={open} setOpen={setOpen} index={p.id} />
-                        ))}
-                    </div>
-                </aside>
-                <AnimatePresence>
-                    <motion.aside 
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        key={video}
-                        className="bg-slate-300 rounded-2xl aspect-[4/3] lg:aspect-auto"
-                        style={{
-                            backgroundVideo: `url(${video})`,
-                            backgroundPosition: "center",
-                            backgroundSize: "cover",
-                        }}
-                    />
-                </AnimatePresence>
-            </article>
-        </section>
-    )
-}
+export const GridCardProjects = () => {
+  return (
+    <section className="bg-zinc-800 p-4 text-zinc-50 md:p-12">
+      <article className="mx-auto grid max-w-5xl grid-cols-1 divide-y divide-zinc-700 border border-zinc-700 md:grid-cols-3 md:divide-x md:divide-y-0">
+        <TitleCard />
+        <Card
+          href="#"
+          date="July 2024"
+          title="Hireme"
+          description="simplifies job search process."
+          src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+        <Card
+          href="#"
+          date="June 2024"
+          title="InStock"
+          description="collaborative project management."
+          src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+      </article>
+      <article className="mx-auto grid max-w-5xl grid-cols-1 divide-y divide-zinc-700 border border-zinc-700 md:grid-cols-3 md:divide-x md:divide-y-0">
+        <Card
+          href="#"
+          date="April 2024"
+          title="Prism"
+          description="real-time document management system powered by AI."
+          src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+        <Card
+          href="#"
+          date="March 2024"
+          title="Epigram"
+          description="story telling platform for your pets."
+          src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+        <Card
+          href="#"
+          date="Jan 2024"
+          title="iNote"
+          description="minimalist note-taking platform."
+          src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+      </article>
+    </section>
+  );
+};
