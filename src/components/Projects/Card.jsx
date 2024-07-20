@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { Corners } from "./Corners";
 import { FiGithub, FiGlobe, FiCalendar } from "react-icons/fi";
 import { ProjectShowcaseDrawer } from "./ProjectShowcaseDrawer";
-import { AboutBlock } from "../Homepage/AboutBlock";
 
 export const Card = ({ src, date, href, title, description }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,22 +53,24 @@ export const Card = ({ src, date, href, title, description }) => {
             <h2 className="text-4xl font-bold text-zinc-200">{title}</h2>
             <nav className="flex items-center">
               <Link to="/" className="pr-4">
-                <FiGithub className="text-base hover:text-emerald-300 transition-all" />
+                <FiGithub className="text-base hover:text-emerald-300 text-zinc-200 transition-all" />
               </Link>
               <Link to="/">
-                <FiGlobe className="text-base hover:text-emerald-300 transition-all" />
+                <FiGlobe className="text-base hover:text-emerald-300 text-zinc-200 transition-all" />
               </Link>
             </nav>
           </header>
-          <p className="text-zinc-300 tracking-tight">
+          <p className="text-zinc-400 tracking-tight">
             {description}
           </p>
 
           <footer className="flex items-center gap-4">
-            
+              <img src="/tech/nextjs.svg" alt="NextJS logo" className="h-12 w-12" />
           </footer>
         </article>
       </ProjectShowcaseDrawer>
     </>
   );
 };
+
+
