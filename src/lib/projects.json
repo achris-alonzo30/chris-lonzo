@@ -1,0 +1,55 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "project": "Hireme",
+            "date": "Jul 2024",
+            "role": "Lead Coder",
+            "industry": "BrainStation Capstone",
+            "link": "https://hireme-silk.vercel.app/",
+            "description": "Hireme simplifies and enhances the job application process for job seekers.",
+            "video": "/videos/hireme.mp4"
+        },
+        {
+            "id": 2,
+            "project": "InStock",
+            "date": "Jun 2024",
+            "role": "Software Engineer Student",
+            "industry": "BrainStation CollaborativeProject",
+            "link": "",
+            "description": "Use Git, GitHub, Jira and the Scrum methodology to manage your collaborative workflow to build anInventory Management System application.",
+            "video": ""
+        },
+        {
+            "id": 3,
+            "project": "Prism",
+            "date": "March 2024",
+            "role": "Lead Coder",
+            "industry": "Personal Project",
+            "link": "https://prism-silk.vercel.app/",
+            "description": "Prism is a real-time management system powered by AI, empowering students for efficient document management and accelerating success.",
+            "video": ""
+        },
+        {
+            "id": 4,
+            "project": "Epigram",
+            "date": "Feb 2024",
+            "role": "Lead Coder",
+            "industry": "Personal Project",
+            "link": "https://epigram-plum.vercel.app/",
+            "description": "Epigram is story telling platform for your pets.",
+            "video": ""
+        },
+        {
+            "id": 5,
+            "project": "iNote",
+            "date": "Jan 2024",
+            "role": "Lead Coder",
+            "industry": "Personal Project",
+            "link": "https://inote-six.vercel.app/",
+            "description": "iNote features a minimalist design that focuses on simplicity and functionality, providing a distraction-free note-taking environment.",
+            "video": ""
+        }
+
+    ]
+}
