@@ -43,10 +43,6 @@ export const projects = [
         ],
         backendStacks: [
             {
-                name: "Git Logo",
-                path: "/tech/git.svg"
-            },
-            {
                 name: "OpenAI Logo",
                 path: "/tech/openai.svg"
             },
@@ -71,6 +67,10 @@ export const projects = [
             {
                 name: "Zustand Logo",
                 path: "/tech/zustand.png"
+            },
+            {
+                name: "Git Logo",
+                path: "/tech/git.svg"
             },
         ]
     },
@@ -131,7 +131,16 @@ export const projects = [
             },
             
         ],
-        clientLibraries: []
+        clientLibraries: [
+            {
+                name: "Git Logo",
+                path: "/tech/git.svg"
+            },
+            {
+                name: "Jira Logo",
+                path: "/tech/jira.svg"
+            }
+        ]
     },
     {
         id: 3,
@@ -179,10 +188,6 @@ export const projects = [
         ],
         backendStacks: [
             {
-                name: "Git Logo",
-                path: "/tech/git.svg"
-            },
-            {
                 name: "OpenAI Logo",
                 path: "/tech/openai.svg"
             },
@@ -207,6 +212,10 @@ export const projects = [
             {
                 name: "React-PDF Logo",
                 path: "/tech/react-pdf.png"
+            },
+            {
+                name: "Git Logo",
+                path: "/tech/git.svg"
             },
         ]
     },
@@ -258,10 +267,6 @@ export const projects = [
         ],
         backendStacks: [
             {
-                name: "Git Logo",
-                path: "/tech/git.svg"
-            },
-            {
                 name: "PostgreSQL Logo",
                 path: "/tech/postgresql.svg"
             },
@@ -278,6 +283,10 @@ export const projects = [
             {
                 name: "Clerk Logo",
                 path: "/tech/clerk.svg"
+            },
+            {
+                name: "Git Logo",
+                path: "/tech/git.svg"
             },
         ]
     },
@@ -325,10 +334,6 @@ export const projects = [
         ],
         backendStacks: [
             {
-                name: "Git Logo",
-                path: "/tech/git.svg"
-            },
-            {
                 name: "OpenAI Logo",
                 path: "/tech/openai.svg"
             },
@@ -345,6 +350,10 @@ export const projects = [
             {
                 name: "Clerk Logo",
                 path: "/tech/clerk.svg"
+            },
+            {
+                name: "Git Logo",
+                path: "/tech/git.svg"
             },
         ]
     }
