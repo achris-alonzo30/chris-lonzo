@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import { FiGithub, FiGlobe } from 'react-icons/fi';
 
 export const ProjectDrawerContent = ({
@@ -26,8 +25,9 @@ export const ProjectDrawerContent = ({
           className="h-full w-full rounded-lg"
         />
       </aside>
-      <header className="flex justify-between items-center">
+      <header className="flex gap-2 w-full items-center">
         <h2 className="text-4xl font-bold text-zinc-50">{project}</h2>
+        <div className="w-full h-[1px] bg-zinc-600" />
         <nav className="flex items-center gap-4">
           <Link to={githubUrl} target="_blank">
             <FiGithub className="text-base hover:text-emerald-300 text-zinc-200 transition-all" />
