@@ -31,7 +31,7 @@ export const Card = ({
       >
         <aside className="absolute left-3 top-5 z-10 flex items-center gap-1.5 text-xs uppercase text-zinc-400 transition-colors duration-500 group-hover:text-zinc-50">
           <FiCalendar className="text-base" />
-          <date>{date}</date>
+          <span>{date}</span>
         </aside>
         <h2 className="relative z-10 font-medium text-2xl leading-tight transition-transform duration-500 group-hover:-translate-y-3">
           <span className="font-bold text-3xl underline">{project}</span>{" "}
